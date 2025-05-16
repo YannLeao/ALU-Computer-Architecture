@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar e simular AND gate",
+      "type": "shell",
+      "command": "ghdl -a halfAdder.vhdl && ghdl -a halfAdder_db.vhdl && ghdl -e halfAdder_db && ghdl -r halfAdder_db --vcd=wave.vcd && gtkwave wave.vcd",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

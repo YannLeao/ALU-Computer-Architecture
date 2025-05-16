@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar e simular AND gate",
+      "type": "shell",
+      "command": "ghdl -a and_gate.vhdl && ghdl -a and_gate_tb.vhdl && ghdl -e and_gate_tb && ghdl -r and_gate_tb --vcd=wave.vcd && gtkwave wave.vcd",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
