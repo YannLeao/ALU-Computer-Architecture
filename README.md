@@ -89,5 +89,5 @@ gtkwave wave.vcd
 
 ## Autores
 
-- Nome do Autor 1
-- Nome do Autor 2
+- [Clara Ferreira](https://github.com/MClaraFerreira5)
+- [Yann Leão](https://github.com/YannLeao)
