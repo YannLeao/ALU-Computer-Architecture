@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Simular ALU 1-bit",
+      "type": "shell",
+      "command": "ghdl",
+      "args": [
+        "-a", "alu.vhdl",
+        "&&", "ghdl", "-a", "alu_tb_1bit.vhdl",
+        "&&", "ghdl", "-e", "alu_tb_1bit",
+        "&&", "ghdl", "-r", "alu_tb_1bit", "--vcd=wave_1bit.vcd"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Simular ALU 4-bit",
+      "type": "shell",
+      "command": "ghdl",
+      "args": [
+        "-a", "alu.vhdl",
+        "&&", "ghdl", "-a", "alu_tb_4bit.vhdl",
+        "&&", "ghdl", "-e", "alu_tb_4bit",
+        "&&", "ghdl", "-r", "alu_tb_4bit", "--vcd=wave_4bit.vcd"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
