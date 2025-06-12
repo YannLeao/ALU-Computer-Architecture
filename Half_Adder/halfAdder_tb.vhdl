@@ -1,10 +1,10 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity halfAdder_db is
-end halfAdder_db;
+entity halfAdder_tb is
+end halfAdder_tb;
 
-architecture test of halfAdder_db is
+architecture test of halfAdder_tb is
     signal a, b, y, carry_o : std_logic;
 begin
     uut: entity work.halfAdder

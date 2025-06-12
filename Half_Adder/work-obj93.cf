@@ -1,7 +1,0 @@
-v 4
-file . "halfAdder_db.vhdl" "324a54102ca499701d1063c41e05adfad442da5a" "20250516165357.435":
-  entity halfadder_db at 1( 0) + 0 on 13;
-  architecture test of halfadder_db at 7( 92) + 0 on 14;
-file . "halfAdder.vhdl" "63a1447b045c5a5cd90a7fbe585bb378000a0416" "20250516165357.397":
-  entity halfadder at 1( 0) + 0 on 11;
-  architecture behavior of halfadder at 13( 220) + 0 on 12;
